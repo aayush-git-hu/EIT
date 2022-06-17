@@ -1,0 +1,48 @@
+<html>
+<head>
+	<meta name="viewport" content="width=display-width; initial-scale=1.0">
+	<style>
+		* {
+			box-sizing: border;
+		}
+		.grid-container {
+			display: grid;
+			max-width: 100%;
+			grid-template-columns: auto auto auto;
+			column-gap: 10px;
+			row-gap: 0px;
+			margin: 0;
+			padding: 0;
+		}
+		.grid-item {
+			background-color: blue;
+			border: 2px solid red;
+			text-align: center;
+			color: white;
+			height: 2em;
+		}
+	</style>
+</head>
+<body>	
+<div class="grid-container">
+	<p class="grid-item">1</p>
+	<p class="grid-item">2</p>
+	<p class="grid-item">3</p>
+	<p class="grid-item">4</p>
+	<p class="grid-item">5</p>
+	<p class="grid-item">6</p>
+</div>
+
+<hr>
+
+<div class="grid-container">
+	<p class="grid-item" style="grid-row: 1 / span 2">1</p>
+	<p class="grid-item" style="grid-column: 2 / 4">2</p>
+	<p class="grid-item">3</p>
+	<p class="grid-item">4</p>
+	<p class="grid-item">5</p>
+	<p class="grid-item">6</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<html>
+<head>
+	<title>Exxperiment 1</title>
+	<meta name="viewport" content="width=device-width; initial-scale=1.0">
+	<style>
+		* {
+			box-sizing:  border-box;
+		}
+		.menu {
+			width: 25%;
+			border: 2px solid red;
+			float: left;
+			padding: 20px;
+		}
+		.main {
+			width: 75%;
+			border: 2px solid red;
+			float: left;
+			padding: 20px;
+		}
+
+										/*Media query test*/
+		/*@media only screen and ( min-width: 1000px ) {
+			body {
+				background-color: red;
+			}
+		}
+		@media only screen and ( orientation: landscape ) {
+			h1 {
+				font-size: 10px;
+			}
+		}*/
+
+										/*Different image in different screen sizes*/
+		/*body {
+			background-image: url('image2.jpeg');
+			background-repeat: no-repeat;
+				background-size: cover;
+		}
+
+		@media only screen and ( max-width: 1000px ) {
+			body {
+				background-image: url('image1.jpeg');
+				background-repeat: no-repeat;
+				background-size: cover;
+			}
+		}*/
+		
+
+	</style>
+</head>
+<body>
+	<div class="header">
+		<h1>Chania</h1>
+	</div>
+	<div class="row">
+		<div class="menu">
+			 <ul>
+			 	<li>Flight</li>
+			 	<li>City</li>
+			 	<li>Island</li>
+			 	<li>Food</li>
+			 </ul>
+		</div>
+		<div class="main">
+			<h2>The city</h2>
+			<p>Lorem ipsum</p>
+		</div>
+	<div>
+	
+	<picture>
+		<source srcset="image1.jpeg" media="(min-width:1000px)">
+		<source srcset="image2.jpeg">
+		<img src="image1.jpeg">
+	</picture>
+
+	<video width="500" controls>
+		<source src="test5.mp4" type="video/mp4">
+		<source src="test5.ogg" type="video/ogg">
+	</video>
+
+</body>
+</html>
